@@ -17,13 +17,13 @@
     "abort-controller": "3.0.0",
     "fastify": "4.10.2",
     "node-fetch": "3.3.0",
-    "rimraf": "3.0.2",
     "superjson": "1.11.0",
     "tslib": "2.4.1",
     "ws": "8.11.0",
     "zod": "3.19.1"
   },
   "devDependencies": {
+    "rimraf": "3.0.2",
     "@types/node": "18.11.9",
     "@types/node-fetch": "2.6.2",
     "@types/ws": "8.5.3",
