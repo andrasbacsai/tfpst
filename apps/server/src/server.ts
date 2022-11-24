@@ -6,7 +6,7 @@ import cors from '@fastify/cors';
 import * as path from 'node:path';
 import serve from '@fastify/static';
 
-const isDev = process.env.NODE_ENV === 'development';
+const isDev = process.env['NODE_ENV'] === 'development';
 
 export interface ServerOptions {
   dev?: boolean;
