@@ -1,7 +1,5 @@
 # TRPC + Fastify + Prisma + SvelteKit + TailwindCSS
 
-> Prisma + TailwindCSS is missing now.
-
 ## Get Started
 - pnpm install
 - pnpm dev
