@@ -1,4 +1,4 @@
-import type { ServerOptions } from '../server';
+import type { ServerOptions } from '~/server';
 
 export const serverConfig: ServerOptions = {
   dev: false,

@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "db:generate": "pnpm run --filter server db:generate",
+    "db:push": "pnpm run --filter server db:push",
     "dev": "run-p -l -n dev:*",
     "dev:server": "NODE_ENV=development pnpm run --filter server dev",
     "dev:client": "NODE_ENV=development pnpm run --filter client dev",

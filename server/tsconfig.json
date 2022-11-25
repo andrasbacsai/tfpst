@@ -12,8 +12,11 @@
     "sourceMap": true,
     "importHelpers": true,
     "removeComments": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    },
     // "rootDir": "./",
-    // "baseUrl": "./",
     // "declaration": true,
     // "declarationMap": true,
     // "declarationDir": "types",
