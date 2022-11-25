@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
-	import type { AppRouter } from 'server/src/router/index';
+	import type { AppRouter } from 'server/src/router';
 	import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
 	import { onMount } from 'svelte';
 	import { dev } from '$app/environment';

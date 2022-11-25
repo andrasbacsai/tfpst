@@ -1,5 +1,5 @@
 {
-  "include": ["src", "apps/server/src/config.ts"],
+  "include": ["src", "server/src/config.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "module": "commonjs",
