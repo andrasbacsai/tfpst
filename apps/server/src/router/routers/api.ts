@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { publicProcedure, router } from '~/router/trpc';
-import { prisma } from '~/prisma';
+import { publicProcedure, router } from '../trpc';
+import { prisma } from '../../prisma';
 
 export const apiRouter = router({
   version: publicProcedure.query(() => {
