@@ -20,18 +20,20 @@
 	});
 
 	onMount(async () => {
-		const trpcData = await client.api.hello.query();
-		const prismaData = await client.api.db.query();
-		const apiData = await (await fetch(`${serverBaseUrl}/api`)).json();
-
+		const [trpcData, apiData, prismaData] = await Promise.all([
+			client.api.hello.query(),
+			fetch(`${serverBaseUrl}/api`),
+			client.api.db.query()
+		]);
 		dataFromTrpc = JSON.stringify(trpcData, null, 2) + '✅';
-		dataFromApi = JSON.stringify(apiData, null, 2) + '✅';
+		dataFromApi = JSON.stringify(await apiData.json(), null, 2) + '✅';
 		dataFromPrisma = JSON.stringify(prismaData, null, 2) + '✅';
 	});
 </script>
 
 <slot />
 <div>Tailwind ✅</div>
+<div>Prisma ✅</div>
 <div>This is coming from TRPC: {dataFromTrpc}</div>
 <div>This is coming from API: {dataFromApi}</div>
 <div>This is coming from DB (Prisma): {dataFromPrisma}</div>
