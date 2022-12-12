@@ -26,6 +26,7 @@ importers:
       prettier: 2.8.0
       prettier-plugin-svelte: 2.8.1
       server: workspace:*
+      superjson: 1.11.0
       svelte: 3.53.1
       svelte-check: 2.9.2
       svelte-preprocess: ^4.10.7
@@ -37,6 +38,7 @@ importers:
       '@trpc/client': 10.1.0_@trpc+server@10.1.0
       '@trpc/server': 10.1.0
       server: link:../server
+      superjson: 1.11.0
     devDependencies:
       '@playwright/test': 1.28.1
       '@sveltejs/adapter-static': 1.0.0-next.48
@@ -71,6 +73,7 @@ importers:
       '@types/node-fetch': 2.6.2
       '@types/ws': 8.5.3
       abort-controller: 3.0.0
+      dotenv: ^16.0.3
       fastify: 4.10.2
       node-fetch: 3.3.0
       npm-run-all: 4.1.5
@@ -92,6 +95,7 @@ importers:
       '@trpc/client': 10.1.0_@trpc+server@10.1.0
       '@trpc/server': 10.1.0
       abort-controller: 3.0.0
+      dotenv: 16.0.3
       fastify: 4.10.2
       node-fetch: 3.3.0
       prisma: 4.6.1
@@ -1064,6 +1068,11 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+    dev: false
 
   /duplexer/0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
